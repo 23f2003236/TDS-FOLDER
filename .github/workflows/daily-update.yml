@@ -13,9 +13,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: 23f2003236@ds.study.iitm.ac.in - Update file
+      - name: 23f2003236@ds.study.iitm.ac.in - Force Update File
         run: |
-          echo "Last updated on $(date)" >> daily-log.txt
+           echo "Run at $(date +%s)" >> daily-log.txt
 
       - name: Commit and push changes
         run: |
